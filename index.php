@@ -19,7 +19,7 @@ do{
     $valorDeposito = 0;
     if($userOption === 2){
         echo "\n    Digite o valor do depósito {$corAmarela}(somente números){$reset}: ";
-        $valorDeposito =  fgets(STDIN);
+        $valorDeposito =  str_replace(',', '.', fgets(STDIN));
         if(is_numeric($valorDeposito)){
             $valorDeposito = (float) $valorDeposito;
         }else{
@@ -32,7 +32,7 @@ do{
     $valorSaque = 0;
     if($userOption === 3){
         echo "\n    Digite o valor do saque {$corAmarela}(somente números){$reset}: ";
-        $valorSaque = fgets(STDIN);
+        $valorSaque =  str_replace(',', '.', fgets(STDIN));
         if(is_numeric($valorSaque)){
             $valorSaque = (float) $valorSaque;
         }else{
@@ -51,10 +51,10 @@ do{
         1 => mostrarSaldo($dados) . PHP_EOL,
         2 => depositar($dados, $valorDeposito) . PHP_EOL,
         3 => sacar($dados, $valorSaque) . PHP_EOL,
+        4 => "{$corVerde}Até mais!{$reset}". PHP_EOL,
         "deposito-negativo" => "{$corVermelha}Depósito não realizado devido valor negativo informado $reset" . PHP_EOL,
         "saque-negativo" => "{$corVermelha}Saque não realizado devido valor negativo informado $reset" . PHP_EOL,
         "saque-maior" =>  "{$corVermelha}Saque não realizado devido ausência de valor$reset" . PHP_EOL,
-        4 => "{$corVerde}Até mais!{$reset}". PHP_EOL,
         default => "{$corVermelha}Opção inválida. $reset" . PHP_EOL,
     };
     echo "$corVerde    $result $reset";
