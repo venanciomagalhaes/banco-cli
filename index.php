@@ -25,7 +25,7 @@ do{
         }else{
             $userOption = "invalido";
         }
-        if($valorDeposito < 0){
+        if($valorDeposito <= 0){
             $userOption = "deposito-negativo";
         }
     }
@@ -38,7 +38,7 @@ do{
         }else{
             $userOption = "invalido";
         }
-        if($valorSaque < 0){
+        if($valorSaque <= 0){
             $userOption = "saque-negativo";
         }
         if($valorSaque > $dados['saldo']){
