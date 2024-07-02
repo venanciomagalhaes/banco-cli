@@ -8,4 +8,4 @@ php index.php
 ````
 ![image](https://github.com/venanciomagalhaes/banco-cli/assets/99407513/5556b084-951a-45b6-b0e2-65ab3f7184db)
 
-Obs: o objetivo era apenas satisfazer os requisitos apresentados, sem necessidade de melhores práticas ou implementação>
+Obs: o objetivo era apenas satisfazer os requisitos apresentados, sem necessidade de melhores práticas ou implementação robusta
