@@ -1,12 +1,13 @@
 <?php
 
-require_once __DIR__ . '/includes/cores.php';
-require_once __DIR__ . '/functions/mostrarTitular.php';
-require_once __DIR__ . '/functions/mostrarSaldo.php';
-require_once __DIR__ . '/functions/depositar.php';
-require_once __DIR__ . '/functions/sacar.php';
-require_once __DIR__ . '/includes/topo.php';
-require_once __DIR__ . '/includes/opcoes.php';
+<?php
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'includes' .  DIRECTORY_SEPARATOR . 'cores.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'functions' . DIRECTORY_SEPARATOR . 'mostrarTitular.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'functions' . DIRECTORY_SEPARATOR . 'mostrarSaldo.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'functions' . DIRECTORY_SEPARATOR . 'depositar.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'functions' . DIRECTORY_SEPARATOR . 'sacar.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'includes' .  DIRECTORY_SEPARATOR . 'topo.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'includes' .  DIRECTORY_SEPARATOR . 'opcoes.php';
 
 echo $topo;
 do{
