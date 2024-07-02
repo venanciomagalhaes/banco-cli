@@ -1,6 +1,5 @@
 <?php
 
-<?php
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'includes' .  DIRECTORY_SEPARATOR . 'cores.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'functions' . DIRECTORY_SEPARATOR . 'mostrarTitular.php';
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'functions' . DIRECTORY_SEPARATOR . 'mostrarSaldo.php';
