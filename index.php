@@ -12,7 +12,10 @@ echo $topo;
 do{
     echo $opcoes;
     echo "\n    Digite o valor da opção {$corAmarela}(digite apenas o número do procedimento){$reset}: ";
-    $userOption = (int) fgets(STDIN);
+    $userOption = fgets(STDIN);
+    if(is_numeric($userOption)){
+        $userOption = (int)$userOption;
+    }
     $valorDeposito = 0;
     if($userOption === 2){
         echo "\n    Digite o valor do depósito {$corAmarela}(somente números){$reset}: ";
